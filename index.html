@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paysagement Tout Vert — Paysagiste Rive-Sud de Montréal</title>
+  <meta name="description" content="Paysagement Tout Vert — paysagiste sur la Rive-Sud de Montréal depuis 2017. Aménagement paysager, pavé uni, excavation et entretien. Soumission gratuite.">
+  <meta name="geo.region" content="CA-QC">
+  <meta name="geo.placename" content="Rive-Sud de Montréal">
+  <meta property="og:title" content="Paysagement Tout Vert — Paysagiste Rive-Sud de Montréal">
+  <meta property="og:description" content="Aménagement paysager, pavé uni, excavation et entretien sur la Rive-Sud de Montréal depuis 2017. Soumission gratuite.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --font-display: 'DM Sans', sans-serif;
+      --font-body: 'Inter', sans-serif;
+
+      /* Brand palette */
+      --color-brand-25: #F0F9F1;
+      --color-brand-50: #E2F3E3;
+      --color-brand-100: #C5E7C7;
+      --color-brand-200: #9DD5A1;
+      --color-brand-300: #6EBD74;
+      --color-brand-400: #4AAF50;
+      --color-brand-500: #2E7D32;
+      --color-brand-600: #276C2B;
+      --color-brand-700: #1F5A23;
+      --color-brand-800: #1B4D1E;
+      --color-brand-900: #143D17;
+      --color-brand-950: #0D2B0F;
+
+      /* Gray neutral palette */
+      --color-gray-25: #FCFCFD;
+      --color-gray-50: #F9FAFB;
+      --color-gray-100: #F2F4F7;
+      --color-gray-200: #EAECF0;
+      --color-gray-300: #D0D5DD;
+      --color-gray-400: #98A2B3;
+      --color-gray-500: #667085;
+      --color-gray-600: #475467;
+      --color-gray-700: #344054;
+      --color-gray-800: #1D2939;
+      --color-gray-900: #101828;
+      --color-gray-950: #0C111D;
+
+      /* Utility colors */
+      --color-error-500: #F04438;
+      --color-error-600: #D92D20;
+      --color-warning-500: #F79009;
+      --color-warning-600: #DC6803;
+      --color-success-500: #17B26A;
+      --color-success-600: #079455;
+
+      /* Semantic — text */
+      --text-primary: var(--color-gray-900);
+      --text-secondary: var(--color-gray-700);
+      --text-tertiary: var(--color-gray-600);
+      --text-placeholder: var(--color-gray-400);
+      --text-disabled: var(--color-gray-400);
+      --text-brand-primary: var(--color-brand-700);
+      --text-white: #FFFFFF;
+
+      /* Semantic — backgrounds */
+      --bg-primary: #FFFFFF;
+      --bg-secondary: var(--color-gray-50);
+      --bg-tertiary: var(--color-gray-100);
+      --bg-brand-primary: var(--color-brand-500);
+      --bg-brand-secondary: var(--color-brand-50);
+      --bg-brand-solid: var(--color-brand-500);
+      --bg-brand-solid-hover: var(--color-brand-600);
+
+      /* Semantic — borders */
+      --border-primary: var(--color-gray-300);
+      --border-secondary: var(--color-gray-200);
+      --border-tertiary: var(--color-gray-100);
+      --border-brand: var(--color-brand-500);
+
+      /* Shadows */
+      --shadow-xs: 0 1px 2px rgba(26,24,22,0.05);
+      --shadow-sm: 0 1px 2px rgba(26,24,22,0.06), 0 1px 3px rgba(26,24,22,0.1);
+      --shadow-md: 0 2px 4px -2px rgba(26,24,22,0.06), 0 4px 8px -2px rgba(26,24,22,0.1);
+      --shadow-lg: 0 4px 6px -2px rgba(26,24,22,0.03), 0 12px 16px -4px rgba(26,24,22,0.08);
+      --shadow-xl: 0 8px 8px -4px rgba(26,24,22,0.03), 0 20px 24px -4px rgba(26,24,22,0.08);
+      --shadow-2xl: 0 24px 48px -12px rgba(26,24,22,0.18);
+
+      /* Border radius */
+      --radius-xs: 4px;
+      --radius-sm: 6px;
+      --radius-md: 8px;
+      --radius-lg: 12px;
+      --radius-xl: 16px;
+      --radius-2xl: 20px;
+      --radius-full: 9999px;
+
+      /* Spacing */
+      --spacing-xs: 4px;
+      --spacing-sm: 8px;
+      --spacing-md: 12px;
+      --spacing-lg: 16px;
+      --spacing-xl: 20px;
+      --spacing-2xl: 24px;
+      --spacing-3xl: 32px;
+      --spacing-4xl: 48px;
+      --spacing-5xl: 64px;
+      --spacing-6xl: 96px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* Typography */
+    .display-2xl { font-family: var(--font-display); font-size: clamp(48px, 7vw, 72px); line-height: 1.1; font-weight: 700; letter-spacing: -1.44px; }
+    .display-xl { font-family: var(--font-display); font-size: clamp(40px, 6vw, 60px); line-height: 1.1; font-weight: 700; letter-spacing: -1.2px; }
+    .display-lg { font-family: var(--font-display); font-size: clamp(36px, 5vw, 48px); line-height: 1.17; font-weight: 700; letter-spacing: -0.96px; }
+    .display-md { font-family: var(--font-display); font-size: 36px; line-height: 1.22; font-weight: 600; letter-spacing: -0.72px; }
+    .display-sm { font-family: var(--font-display); font-size: 30px; line-height: 1.27; font-weight: 600; }
+    .display-xs { font-family: var(--font-display); font-size: 24px; line-height: 1.33; font-weight: 600; }
+    .text-xl { font-family: var(--font-body); font-size: 20px; line-height: 1.5; }
+    .text-lg { font-family: var(--font-body); font-size: 18px; line-height: 1.56; }
+    .text-md { font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
+    .text-sm { font-family: var(--font-body); font-size: 14px; line-height: 1.43; }
+    .text-xs { font-family: var(--font-body); font-size: 12px; line-height: 1.5; }
+
+    /* Container */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+    @media (max-width: 768px) { .container { padding: 0 16px; } }
+
+    /* Buttons */
+    .btn-primary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 18px; background: var(--bg-brand-solid); color: var(--text-white);
+      border: none; border-radius: var(--radius-md); font-size: 16px; font-weight: 600;
+      line-height: 1.5; cursor: pointer; box-shadow: var(--shadow-xs);
+      font-family: var(--font-body);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover { background: var(--bg-brand-solid-hover); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+
+    .btn-secondary {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 10px 18px; background: var(--bg-primary); color: var(--text-secondary);
+      border: 1px solid var(--border-primary); border-radius: var(--radius-md);
+      font-size: 16px; font-weight: 600; line-height: 1.5; cursor: pointer;
+      box-shadow: var(--shadow-xs); font-family: var(--font-body);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .btn-secondary:hover { background: var(--bg-secondary); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+
+    .btn-lg { padding: 12px 20px; font-size: 18px; }
+
+    /* Badge */
+    .badge {
+      display: inline-flex; align-items: center; gap: 4px;
+      padding: 2px 10px; border-radius: var(--radius-full);
+      font-size: 14px; font-weight: 500; line-height: 1.43;
+    }
+    .badge-brand { background: var(--bg-brand-secondary); color: var(--text-brand-primary); }
+
+    /* Featured Icon */
+    .featured-icon {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 48px; height: 48px; border-radius: var(--radius-lg);
+      background: var(--color-brand-100); color: var(--color-brand-600);
+      transition: background 0.3s, transform 0.3s;
+    }
+    .card:hover .featured-icon { background: var(--color-brand-200); transform: scale(1.1); }
+
+    /* Card */
+    .card {
+      background: var(--bg-primary); border: 1px solid var(--border-secondary);
+      border-radius: var(--radius-lg); overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .card-padding { padding: 24px; }
+
+    /* Section */
+    .section { padding: 96px 0; }
+    .section-sm { padding: 64px 0; }
+    .section-white { background: var(--bg-primary); }
+    .section-gray { background: var(--bg-primary); }
+    .section-brand { background: var(--color-brand-900); color: #FFFFFF; }
+
+    @media (max-width: 768px) {
+      .section { padding: 64px 0; }
+      .section-sm { padding: 48px 0; }
+    }
+
+    /* Section Header */
+    .section-header { max-width: 768px; }
+    .section-header.centered { margin: 0 auto; text-align: center; }
+    .section-header .tagline {
+      font-size: 16px; font-weight: 600;
+      color: var(--text-brand-primary); margin-bottom: 12px;
+    }
+    .section-header .title {
+      font-weight: 600; color: var(--text-primary); margin-bottom: 20px;
+    }
+    .section-header .description {
+      font-size: 20px; line-height: 1.5; color: var(--text-tertiary);
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed; top: 0; width: 100%; z-index: 1000;
+      background: var(--bg-primary);
+    }
+    .navbar-inner {
+      max-width: 1280px; margin: 0 auto; padding: 0 32px;
+      display: flex; align-items: center; justify-content: space-between; height: 80px;
+    }
+    .navbar-logo {
+      display: flex; align-items: center; gap: 0;
+    }
+    .navbar-logo img { width: 64px; height: 64px; border-radius: var(--radius-full); object-fit: cover; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a {
+      color: var(--text-secondary); font-size: 16px; font-weight: 600; text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text-brand-primary); }
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
+    .nav-mobile-toggle {
+      display: none; background: none; border: none; cursor: pointer;
+      color: var(--text-primary); padding: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-inner { padding: 0 16px; height: 72px; }
+      .navbar-logo img { width: 56px; height: 56px; }
+      .nav-links { display: none; }
+      .nav-cta .btn-primary { display: none; }
+      .nav-mobile-toggle { display: block; }
+    }
+
+    .mobile-menu {
+      display: none; position: fixed; top: 72px; left: 0; right: 0;
+      background: var(--bg-primary); padding: 16px; z-index: 999;
+    }
+    .mobile-menu.open { display: block; }
+    .mobile-menu a {
+      display: block; padding: 12px 16px; color: var(--text-secondary);
+      font-size: 16px; font-weight: 600;
+    }
+    .mobile-menu a:hover { color: var(--text-brand-primary); background: var(--bg-secondary); border-radius: var(--radius-md); }
+    .mobile-menu .btn-primary { width: 100%; margin-top: 12px; text-align: center; }
+
+    /* ===== HERO ===== */
+    .hero {
+      position: relative; min-height: 85vh; display: flex; align-items: center;
+      padding-top: 72px; overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: 0;
+    }
+    .hero-bg img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: blur(6px); transform: scale(1.05);
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to bottom, rgba(13,43,15,0.82), rgba(13,43,15,0.92));
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; gap: 24px; max-width: 800px; margin: 0 auto;
+      padding: 96px 0;
+    }
+    .hero-content h1 { color: #FFFFFF; }
+    .hero-content .hero-desc { color: rgba(255,255,255,0.85); }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+
+    @media (max-width: 768px) {
+      .hero { min-height: 70vh; }
+      .hero-content { padding: 64px 0; }
+    }
+
+    /* ===== SERVICES GRID ===== */
+    .services-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px;
+    }
+    .service-card .card-padding { display: flex; flex-direction: column; gap: 16px; }
+    .service-card .card-title {
+      font-family: var(--font-display); font-size: 20px; font-weight: 600;
+      color: var(--text-primary);
+    }
+    .service-card .card-desc { font-size: 16px; line-height: 1.5; color: var(--text-secondary); }
+
+    @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .services-grid { grid-template-columns: 1fr; } }
+
+    /* ===== REALISATIONS GRID ===== */
+    .realisations-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px;
+    }
+    .realisation-card {
+      overflow: hidden; border-radius: var(--radius-lg);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .realisation-card:hover { box-shadow: var(--shadow-xl); transform: translateY(-4px); }
+    .realisation-card img {
+      width: 100%; aspect-ratio: 4/3; object-fit: cover;
+      border-radius: var(--radius-lg);
+      transition: transform 0.4s;
+    }
+    .realisation-card:hover img { transform: scale(1.05); }
+
+    @media (max-width: 768px) { .realisations-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 640px) { .realisations-grid { grid-template-columns: 1fr; } }
+
+    /* ===== ABOUT ===== */
+    .about-inner {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+    }
+    .about-image {
+      border-radius: var(--radius-xl); overflow: hidden; box-shadow: var(--shadow-lg);
+    }
+    .about-image img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+    .about-content { display: flex; flex-direction: column; gap: 24px; }
+    .about-stats {
+      display: flex; gap: 32px; padding-top: 24px;
+      border-top: 1px solid var(--border-secondary);
+    }
+    .stat-item { display: flex; flex-direction: column; gap: 4px; }
+    .stat-value {
+      font-family: var(--font-display); font-size: 36px; font-weight: 700;
+      color: var(--text-brand-primary);
+    }
+    .stat-label { font-size: 14px; color: var(--text-tertiary); }
+
+    @media (max-width: 768px) {
+      .about-inner { grid-template-columns: 1fr; gap: 40px; }
+      .about-stats { gap: 24px; }
+      .stat-value { font-size: 28px; }
+    }
+
+    /* ===== CTA SECTION ===== */
+    .cta-content {
+      text-align: center; max-width: 640px; margin: 0 auto;
+      display: flex; flex-direction: column; align-items: center; gap: 24px;
+    }
+    .cta-content .title { color: #FFFFFF; }
+    .cta-content .description { color: rgba(255,255,255,0.8); font-size: 20px; line-height: 1.5; }
+    .btn-white {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 20px; background: #FFFFFF; color: var(--color-brand-700);
+      border: none; border-radius: var(--radius-md); font-size: 18px; font-weight: 600;
+      cursor: pointer; box-shadow: var(--shadow-md); font-family: var(--font-body);
+      transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    }
+    .btn-white:hover { background: var(--color-gray-50); box-shadow: var(--shadow-lg); transform: translateY(-1px); }
+
+    /* ===== CONTACT CTA ===== */
+    .contact-cta-card {
+      text-align: center;
+      background: var(--color-brand-900); color: #FFFFFF;
+      border-radius: var(--radius-xl); padding: 64px 48px;
+    }
+    .contact-cta-card .section-header { margin-bottom: 32px; }
+    .contact-cta-card .section-header .tagline { color: var(--color-brand-300); }
+    .contact-cta-card .section-header .title { color: #FFFFFF; }
+    .contact-cta-card .section-header .description { color: rgba(255,255,255,0.75); }
+    .contact-cta-actions {
+      display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;
+    }
+    .contact-cta-actions .btn-primary,
+    .contact-cta-actions .btn-secondary { min-width: 220px; }
+    .contact-cta-actions .btn-secondary {
+      background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,0.3);
+    }
+    .contact-cta-actions .btn-secondary:hover {
+      background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5);
+    }
+    .contact-details {
+      display: flex; gap: 32px; justify-content: center; margin-top: 32px;
+      padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.15);
+    }
+    .contact-detail-item {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 14px; color: rgba(255,255,255,0.65);
+    }
+    .contact-detail-item svg { color: var(--color-brand-300); flex-shrink: 0; }
+
+    @media (max-width: 640px) {
+      .contact-cta-card { padding: 40px 24px; }
+      .contact-cta-actions { flex-direction: column; }
+      .contact-cta-actions .btn-primary,
+      .contact-cta-actions .btn-secondary { width: 100%; min-width: 0; }
+      .contact-details { flex-direction: column; gap: 16px; align-items: center; }
+    }
+
+    /* ===== SCROLL ANIMATIONS ===== */
+    .fade-up {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+    /* Stagger children */
+    .stagger > .fade-up:nth-child(1) { transition-delay: 0s; }
+    .stagger > .fade-up:nth-child(2) { transition-delay: 0.1s; }
+    .stagger > .fade-up:nth-child(3) { transition-delay: 0.2s; }
+    .stagger > .fade-up:nth-child(4) { transition-delay: 0.3s; }
+    .stagger > .fade-up:nth-child(5) { transition-delay: 0.4s; }
+    .stagger > .fade-up:nth-child(6) { transition-delay: 0.5s; }
+    .stagger > .fade-up:nth-child(7) { transition-delay: 0.6s; }
+    .stagger > .fade-up:nth-child(8) { transition-delay: 0.7s; }
+
+    /* ===== FOOTER ===== */
+    .footer { background: var(--color-gray-900); color: var(--color-gray-300); padding: 64px 0 32px; }
+    .footer-inner {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+    }
+    .footer-brand { display: flex; flex-direction: column; gap: 16px; }
+    .footer-brand-name {
+      font-family: var(--font-display); font-size: 20px; font-weight: 700; color: #FFFFFF;
+    }
+    .footer-brand-desc { font-size: 14px; line-height: 1.5; color: var(--color-gray-400); }
+    .footer-col-title {
+      font-size: 14px; font-weight: 600; color: #FFFFFF;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 16px;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .footer-links a { font-size: 14px; color: var(--color-gray-400); transition: color 0.2s; }
+    .footer-links a:hover { color: #FFFFFF; }
+    .footer-bottom {
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--color-gray-800);
+      font-size: 12px; color: var(--color-gray-500);
+    }
+
+    @media (max-width: 768px) {
+      .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
+    }
+    @media (max-width: 640px) {
+      .footer-inner { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="navbar-logo">
+        <img src="https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-1/297688339_460995519367042_736095575291275340_n.jpg?stp=c52.0.1945.1945a_dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=GQ5WnOSNsvsQ7kNvwHuqIS4&_nc_oc=AdnX-2vdJfK4s7BrkcdecFsunkOHEMmBdOLbuMfJnryktPXP1Q7vnLH9Pj0E93FtdP0&_nc_zt=24&_nc_ht=scontent.fymq3-1.fna&_nc_gid=EGOFyoMZMyCMxD4d9LRHcg&_nc_ss=8&oh=00_Afw0Q3CZzzMNaPK-0Ywyj0BvyBF_onwZqS6qR4cl87dfUw&oe=69B0BF47" alt="Logo Paysagement Tout Vert">
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:4505216069" class="btn-primary">Soumission gratuite</a>
+        <button class="nav-mobile-toggle" aria-label="Menu" onclick="document.getElementById('mobile-menu').classList.toggle('open')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#services" onclick="document.getElementById('mobile-menu').classList.remove('open')">Services</a>
+    <a href="#realisations" onclick="document.getElementById('mobile-menu').classList.remove('open')">Réalisations</a>
+    <a href="#apropos" onclick="document.getElementById('mobile-menu').classList.remove('open')">À propos</a>
+    <a href="#contact" onclick="document.getElementById('mobile-menu').classList.remove('open')">Contact</a>
+    <a href="tel:4505216069" class="btn-primary">Soumission gratuite</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t39.30808-6/615967947_1437171621749422_3310867680450146362_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=oR87Co7ldBMQ7kNvwGzL8Tb&_nc_oc=Adn_XVb9Fol0qP8e194GGQgAkZqz4Ia9r8TnVDiXjYHFZIAvzUye2wICk1RmiXvc5SM&_nc_zt=23&_nc_ht=scontent.fyhu2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfxHn2lJ0DR5wbvJ9c7QL_p26UkYPFuNM08oX0jQHfpdvw&oe=69B0DDDC" alt="Projet d'aménagement paysager sur la Rive-Sud de Montréal">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge badge-brand">Depuis 2017</span>
+        <h1 class="display-xl">Aménagement paysager, entretien et excavation sur la Rive-Sud de Montréal</h1>
+        <p class="text-xl hero-desc">Transformez votre terrain avec une équipe d'expérience. Paysagement, pavé uni, entretien saisonnier et excavation — soumission gratuite.</p>
+        <div class="hero-actions">
+          <a href="tel:4505216069" class="btn-primary btn-lg">Obtenir une soumission gratuite</a>
+          <a href="#realisations" class="btn-secondary btn-lg" style="background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,0.4);">Voir nos réalisations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section section-gray">
+    <div class="container">
+      <div class="section-header centered fade-up">
+        <p class="tagline">Nos services</p>
+        <h2 class="title display-md">Des solutions complètes pour votre terrain</h2>
+        <p class="description">De la conception à la réalisation, nous offrons une gamme complète de services d'aménagement et d'entretien.</p>
+      </div>
+      <div class="services-grid stagger">
+        <div class="card service-card fade-up">
+          <div class="card-padding">
+            <div class="featured-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Aménagement paysager</h3>
+            <p class="card-desc">Conception et réalisation d'aménagements complets pour les terrains résidentiels et commerciaux. Plates-bandes, murets, plantation et design sur mesure.</p>
+          </div>
+        </div>
+        <div class="card service-card fade-up">
+          <div class="card-padding">
+            <div class="featured-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 3v18"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Pavé uni</h3>
+            <p class="card-desc">Installation de pavé uni pour entrées, terrasses et trottoirs. Des projets de toutes tailles — du petit patio aux entrées de cour complètes.</p>
+          </div>
+        </div>
+        <div class="card service-card fade-up">
+          <div class="card-padding">
+            <div class="featured-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                <circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Excavation</h3>
+            <p class="card-desc">Travaux d'excavation, démolition et préparation de terrain. De la fondation au coffrage, notre équipe gère chaque étape du chantier.</p>
+          </div>
+        </div>
+        <div class="card service-card fade-up">
+          <div class="card-padding">
+            <div class="featured-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Entretien de terrain</h3>
+            <p class="card-desc">Entretien saisonnier de votre pelouse et terrain. Tonte, fermeture de terrain à l'automne et ouverture au printemps.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Realisations -->
+  <section id="realisations" class="section section-white">
+    <div class="container">
+      <div class="section-header centered fade-up">
+        <p class="tagline">Nos réalisations</p>
+        <h2 class="title display-md">Des projets qui parlent d'eux-mêmes</h2>
+        <p class="description">Découvrez quelques-uns de nos projets complétés sur la Rive-Sud de Montréal.</p>
+      </div>
+      <div class="realisations-grid stagger">
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/616124445_1437171528416098_1899447978423416526_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=101&ccb=1-7&_nc_sid=13d280&_nc_ohc=GtMGzBE3O6oQ7kNvwE7mvO1&_nc_oc=AdnSoK1bkP1oFDT86vOz2mmXNf0UqEvuHz6I9bLk8Z-F6SKyWcpB-crplxXXnCoRxww&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfxVYfFSLNR-uXpC0oIIWdBAeu1UNZML9WMvTUJFalxPfg&oe=69B0E360" alt="Réalisation pavé uni sur la Rive-Sud">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t39.30808-6/617023257_1437171511749433_155921677788833808_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=JdFrBkYztkEQ7kNvwHBSuH4&_nc_oc=AdnF1YHC3xqjJHA0fXtojbyfIhYeSpIcH_ynz8qzpy0uul5w-tT9NA5aSzwnDcJENg4&_nc_zt=23&_nc_ht=scontent.fyhu2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfwBOR_ZenvR7Kx8V5wnps9TCXaJjf200ZOVWj08E2_NbQ&oe=69B0B16F" alt="Travaux d'aménagement paysager à Montréal">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fymq2-1.fna.fbcdn.net/v/t39.30808-6/615496626_1437171481749436_3020022095856878565_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=YWW5scTZ3KQQ7kNvwEwlt9i&_nc_oc=Adn6qoafWDF0mNv9XqtJXfYG7fVd00IEVsFJxwjDdDm4CWDRWtGO8ZqtFZa1_b_veUg&_nc_zt=23&_nc_ht=scontent.fymq2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfxEr0dWeceh1j_034mgN9V_rnPliN5qMl4b_FohAgYCGA&oe=69B0E5BA" alt="Projet d'excavation sur la Rive-Sud">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t39.30808-6/616823716_1437171595082758_4112741372719474509_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=110&ccb=1-7&_nc_sid=13d280&_nc_ohc=Jky1-WkuWisQ7kNvwFOt3gM&_nc_oc=AdmzrAodKA3mtTfgHE-JNeIh7PHvhXAnBHCbHj-6xegDWf3kWm9xdrcNGmuuP_6nh7w&_nc_zt=23&_nc_ht=scontent.fyhu2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfzaNy3g41WSGxjpr29ESSJ_jdJRP18Vibd7KGbvcwkFPg&oe=69B0C00D" alt="Construction et aménagement Rive-Sud">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t39.30808-6/571425587_1366707512129167_761224496118528525_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=M1BpbHd4EqIQ7kNvwE4ED_8&_nc_oc=Adm5aKWgttTLvJ3zwVDph4BiISkW8HnJ6_2dKMPwfdZ4unvN49Hej6z9uy3lcQ2ai28&_nc_zt=23&_nc_ht=scontent.fyhu2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfxrDUbRqVxC4i3oMeEOIDckMr0gPkhc1e6Bv8-H0Hh1dA&oe=69B0CF6F" alt="Travaux de terrain sur la Rive-Sud de Montréal">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fymq2-1.fna.fbcdn.net/v/t39.30808-6/557998140_1344202987712953_6870481055827016830_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=x7sJ8lGJTKUQ7kNvwHYlJqi&_nc_oc=Adk37g_GPui8ds0n74f1B8cBMnkJuc3eZR9KMNtuP3FLMg74abzYwSFsSoEHnInLs2g&_nc_zt=23&_nc_ht=scontent.fymq2-1.fna&_nc_gid=dhLbbpr3ZZr5fWT6Eg-PHQ&_nc_ss=8&oh=00_Afw3Gk34N96uC3vdmEkQSGdR5Ht88pO3R5Rv501-xOAbvA&oe=69B0DB5F" alt="Aménagement paysager résidentiel Montérégie">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fymq3-1.fna.fbcdn.net/v/t39.30808-6/548483372_1331988235601095_2264294220142762360_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=102&ccb=1-7&_nc_sid=13d280&_nc_ohc=3-La4FH4y10Q7kNvwEA0skD&_nc_oc=AdnXhpSuo3J2YMl1W-cfywxQflBNyvXadiDCJuBohTQMI1p-9GSpfrXVVyW010I57Ac&_nc_zt=23&_nc_ht=scontent.fymq3-1.fna&_nc_gid=dhLbbpr3ZZr5fWT6Eg-PHQ&_nc_ss=8&oh=00_AfzjvnOcLAIIHNnkHGX_d6ngO3b6Gthyt4zYx6NXX8J7wQ&oe=69B0C43C" alt="Construction d'atelier Rive-Sud de Montréal">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fymq2-1.fna.fbcdn.net/v/t39.30808-6/565650827_1360413149425270_7014470930270322857_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=uNsARzwPLU0Q7kNvwHSBKXq&_nc_oc=Adlnqi_mZAQ6v0B3ouLYssTQrf7nhIWFPxnutC_w_tekkxhdtzpPfVItmgZVZ8_rF2k&_nc_zt=23&_nc_ht=scontent.fymq2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfzJ5C6BugqCY9NU5xPdHcRz9SJTGSjcwVz8KSQiVXzrDw&oe=69B0B78A" alt="Projet de paysagement complet sur la Rive-Sud">
+        </div>
+        <div class="realisation-card fade-up">
+          <img src="https://scontent.fyhu2-1.fna.fbcdn.net/v/t39.30808-6/615967947_1437171621749422_3310867680450146362_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=111&ccb=1-7&_nc_sid=13d280&_nc_ohc=oR87Co7ldBMQ7kNvwGzL8Tb&_nc_oc=Adn_XVb9Fol0qP8e194GGQgAkZqz4Ia9r8TnVDiXjYHFZIAvzUye2wICk1RmiXvc5SM&_nc_zt=23&_nc_ht=scontent.fyhu2-1.fna&_nc_gid=1B7sKv9ZtaWjUXoaFpcuoA&_nc_ss=8&oh=00_AfxHn2lJ0DR5wbvJ9c7QL_p26UkYPFuNM08oX0jQHfpdvw&oe=69B0DDDC" alt="Entretien de terrain Rive-Sud de Montréal">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- A propos -->
+  <section id="apropos" class="section section-gray">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-image fade-up">
+          <img src="https://scontent.fymq2-1.fna.fbcdn.net/v/t39.30808-6/552304640_1337398871726698_7129518464589995829_n.jpg?stp=cp6_dst-jpg_p960x960_tt6&_nc_cat=100&ccb=1-7&_nc_sid=13d280&_nc_ohc=25IihdEdn0UQ7kNvwGGzkXI&_nc_oc=Adl5RvszOWlWYBiPV5Um78KYBVoiuMbBMNmSTjBP92q_oXe_SARRmW24-UDOee9oTVk&_nc_zt=23&_nc_ht=scontent.fymq2-1.fna&_nc_gid=dhLbbpr3ZZr5fWT6Eg-PHQ&_nc_ss=8&oh=00_AfwZL6JkCzDoWrXH_2jWPl3RviA5vnf3iV8wHpGsjLrhaw&oe=69B0DB41" alt="Équipe Paysagement Tout Vert sur un chantier Rive-Sud">
+        </div>
+        <div class="about-content fade-up">
+          <div>
+            <p class="tagline" style="font-size: 16px; font-weight: 600; color: var(--text-brand-primary); margin-bottom: 12px;">À propos</p>
+            <h2 class="display-md" style="color: var(--text-primary); margin-bottom: 20px;">Une équipe d'expérience sur la Rive-Sud</h2>
+            <p class="text-lg" style="color: var(--text-tertiary);">Paysagement Tout Vert est une entreprise d'architecture paysagère fondée en 2017 sur la Rive-Sud de Montréal. De la démolition et excavation jusqu'aux finitions, notre équipe prend en charge vos projets du début à la fin.</p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-value">2017</span>
+              <span class="stat-label">Fondée</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Rive-Sud</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">$$</span>
+              <span class="stat-label">Prix compétitifs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section-white">
+    <div class="container">
+      <div class="contact-cta-card fade-up" style="border-radius: var(--radius-2xl);">
+        <div class="section-header centered">
+          <p class="tagline">Contact</p>
+          <h2 class="title display-md">Prêt à transformer votre terrain?</h2>
+          <p class="description">Contactez-nous pour une soumission gratuite, sans engagement. Nous desservons toute la Rive-Sud de Montréal.</p>
+        </div>
+        <div class="contact-cta-actions">
+          <a href="tel:4505216069" class="btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            (450) 521-6069
+          </a>
+          <a href="mailto:toutvert6069@icloud.com" class="btn-secondary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            Envoyer un courriel
+          </a>
+        </div>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            Rive-Sud de Montréal
+          </div>
+          <div class="contact-detail-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/>
+            </svg>
+            Depuis 2017
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-brand-name">Paysagement Tout Vert</span>
+          <p class="footer-brand-desc">Entreprise d'aménagement paysager sur la Rive-Sud de Montréal depuis 2017. Aménagement, pavé uni, excavation et entretien saisonnier.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Aménagement paysager</a></li>
+            <li><a href="#services">Pavé uni</a></li>
+            <li><a href="#services">Excavation</a></li>
+            <li><a href="#services">Entretien de terrain</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="tel:4505216069">(450) 521-6069</a></li>
+            <li><a href="mailto:toutvert6069@icloud.com">toutvert6069@icloud.com</a></li>
+            <li><a>Rive-Sud de Montréal</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Paysagement Tout Vert. Tous droits réservés.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Paysagement Tout Vert",
+    "description": "Aménagement paysager, pavé uni, excavation et entretien sur la Rive-Sud de Montréal depuis 2017.",
+    "telephone": "(450) 521-6069",
+    "email": "toutvert6069@icloud.com",
+    "url": "https://entreprisesbaker.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "QC",
+      "addressCountry": "CA",
+      "addressLocality": "Rive-Sud de Montréal"
+    },
+    "priceRange": "$$",
+    "foundingDate": "2017",
+    "areaServed": "Rive-Sud de Montréal"
+  }
+  </script>
+
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+      anchor.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Scroll reveal animations
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-up').forEach(function(el) {
+      observer.observe(el);
+    });
+
+  </script>
+
+</body>
+</html>
