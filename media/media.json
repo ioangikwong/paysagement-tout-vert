@@ -1,0 +1,16 @@
+{
+  "source": "https://www.facebook.com/entreprisesbaker/?locale=fr_FR",
+  "logo": "media/logo.jpg",
+  "images": [
+    "media/photo-01.jpg",
+    "media/photo-02.jpg",
+    "media/photo-03.jpg",
+    "media/photo-04.jpg",
+    "media/photo-05.jpg",
+    "media/photo-06.jpg",
+    "media/photo-07.jpg",
+    "media/photo-08.jpg",
+    "media/photo-09.jpg",
+    "media/photo-10.jpg"
+  ]
+}
